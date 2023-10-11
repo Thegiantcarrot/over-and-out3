@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Bowling Training Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cricket Bowling Training Log</h1>
+
+    <!-- Training Data Form -->
+    <form id="training-form">
+        <label for="balls-bowled">Number of Balls Bowled:</label>
+        <input type="number" id="balls-bowled" required>
+
+        <label for="time-spent">Time Spent Training (minutes):</label>
+        <input type="number" id="time-spent" required>
+
+        <label for="average-bpm">Average BPM (Optional):</label>
+        <input type="number" id="average-bpm">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore-compat.js"></script>
+    <script src="firebase.js"></script>
+    <script src="training.js"></script>
+</body>
+</html>
